@@ -32,5 +32,12 @@ namespace Infinity.Controllers
 
             return View();
         }
+
+        public ActionResult Courses()
+        {
+            ViewBag.Message = "Your Login page.";
+
+            return View();
+        }
     }
 }
