@@ -37,7 +37,14 @@ namespace Infinity.Controllers
         {
             ViewBag.Message = "Classes Available to Students";
 
-            return View();
+            return View("~/Views/Student/StudentsCourses.cshtml");
+        }
+
+        public ActionResult StudentBeforePoints()
+        {
+            ViewBag.Message = "Classes Available to Students";
+
+            return View("~/Views/Student/StudentBeforeCourses.cshtml");
         }
     }
 }

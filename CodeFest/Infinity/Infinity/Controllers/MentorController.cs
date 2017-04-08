@@ -13,5 +13,13 @@ namespace Infinity.Controllers
         {
             return View();
         }
+        public ActionResult MentorWithCourse()
+        {
+            return View();
+        }
+        public ActionResult MentorWithNoCourse()
+        {
+            return View();
+        }
     }
 }

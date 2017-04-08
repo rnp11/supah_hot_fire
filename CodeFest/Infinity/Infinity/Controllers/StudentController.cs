@@ -13,5 +13,23 @@ namespace Infinity.Controllers
         {
             return View();
         }
+        public ActionResult StudentsCourses()
+        {
+            ViewBag.Message = "Classes Available to Students";
+
+            return View();
+        }
+        public ActionResult StudentBeforePoints()
+        {
+            ViewBag.Message = "Classes Available to Students";
+
+            return View();
+        }
+        public ActionResult StudentAfterPoints()
+        {
+            ViewBag.Message = "Classes Available to Students";
+
+            return View();
+        }
     }
 }
