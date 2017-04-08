@@ -1100,8 +1100,8 @@ input,
 button,
 select,
 textarea {
-  font-family: inherit;
-  font-size: inherit;
+  font-family:"Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+  font-size: 15px;
   line-height: inherit;
 }
 a {
@@ -1121,7 +1121,8 @@ figure {
   margin: 0;
 }
 img {
-  vertical-align: middle;
+  vertical-align: bottom;
+
 }
 .img-responsive,
 .thumbnail > img,
@@ -1131,12 +1132,13 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  padding-top: 20px;
 }
 .img-rounded {
   border-radius: 0;
 }
 .img-thumbnail {
-  padding: 4px;
+  padding: 10px;
   line-height: 1.42857143;
   background-color: #2b3e50;
   border: 1px solid #dddddd;
