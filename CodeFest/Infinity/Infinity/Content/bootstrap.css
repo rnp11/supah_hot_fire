@@ -140,6 +140,7 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
+ 
 }
 button[disabled],
 html input[disabled] {
@@ -3469,6 +3470,7 @@ input[type="submit"].btn-block,
 input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%;
+
 }
 .fade {
   opacity: 0;
@@ -5877,12 +5879,15 @@ button.close {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 1;
   width:100%;
   height: 100%;
   background-color: #2b3e50;
+  color: #000000;
   background-color: rgba(0,0,0,0.4);
-  padding-top: 40%;
+  padding-top: 80px ;
   
 }
 .modal.fade .modal-dialog {
@@ -5910,7 +5915,7 @@ button.close {
   margin: 10px;
 }
 .modal-content {
-  background-color: #fefefe;
+  background-color: #2b3e50;
   border: 1px solid #888;
   margin: 5px auto;
   width: 80%;
@@ -5922,7 +5927,7 @@ button.close {
   bottom: 0;
   left: 0;
   z-index: 1040;
-  background-color: #000000;
+  background-color: #2b3e50;
 }
 .modal-backdrop.fade {
   opacity: 0;
@@ -5975,8 +5980,10 @@ button.close {
     margin: 30px auto;
   }
   .modal-content {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    background-color: #6592bd;
+    margin: 5px auto;
+    border: 1px solid #888;
+    width: 80%;
   }
   .modal-sm {
     width: 300px;

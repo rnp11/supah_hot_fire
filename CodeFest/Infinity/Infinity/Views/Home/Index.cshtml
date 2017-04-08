@@ -2,13 +2,11 @@
     ViewBag.Title = "Home Page";
 }
 
+
 <div class="jumbotron" align="center">
     <img src="../Resources/Infinteen_logo.png" alt="Logo" width="500px" height="260px">
     <p align="center">Infiniteen is dedicated to providing online classes for high school classes, made by professional mentors.</p>
 </div>
-
-<!-- Button to open the modal login form -->
-<button onclick="document.getElementById('id01').style.display='block'">Login</button>
 
 <!-- The Modal -->
 <div id="id01" class="modal">
@@ -28,16 +26,11 @@
             <label><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required>
 
-            <button type="submit">Login</button>
+            <button type="submit" >Login</button>
             <input type="checkbox" checked="checked"> Remember me
-        </div>
-
-        <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
         </div>
     </form>
 </div>
-</div>
-<button type="button" class="btn btn-primary btn-lg">Log in</button>
+
+<button type="button" class="btn btn-primary btn-lg" onclick="document.getElementById('id01').style.display='block'">Log in</button>
 <button type="button" class="btn btn-primary btn-lg">Register</button>
