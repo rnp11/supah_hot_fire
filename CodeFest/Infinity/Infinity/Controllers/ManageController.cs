@@ -10,7 +10,7 @@ using Infinity.Models;
 
 namespace Infinity.Controllers
 {
-    [AllowAnonymous]
+    [Authorize]
     public class ManageController : Controller
     {
         private ApplicationSignInManager _signInManager;
