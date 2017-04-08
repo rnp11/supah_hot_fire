@@ -15,27 +15,27 @@ namespace Infinity.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Your application description page";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Your contact page";
 
             return View();
         }
         public ActionResult Login()
         {
-            ViewBag.Message = "Your Login page.";
+            ViewBag.Message = "Your Login page";
 
             return View();
         }
 
         public ActionResult Courses()
         {
-            ViewBag.Message = "Your Login page.";
+            ViewBag.Message = "Classes Available to Students";
 
             return View();
         }
