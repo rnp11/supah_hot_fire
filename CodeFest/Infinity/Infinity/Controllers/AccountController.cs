@@ -20,7 +20,6 @@ namespace Infinity.Controllers
 
         public AccountController()
         {
-            Console.WriteLine("Here");
         }
 
         public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
