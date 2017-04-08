@@ -33,7 +33,7 @@ namespace Infinity.Controllers
             return View();
         }
 
-        public ActionResult Courses()
+        public ActionResult StudentsCourses()
         {
             ViewBag.Message = "Classes Available to Students";
 
