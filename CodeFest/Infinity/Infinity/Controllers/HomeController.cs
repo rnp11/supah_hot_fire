@@ -37,21 +37,21 @@ namespace Infinity.Controllers
         {
             ViewBag.Message = "Create a course";
 
-            return View("~/Views/Student/StudentsCourses.cshtml");
+            return View();
         }
 
         public ActionResult CreateQuiz()
         {
             ViewBag.Message = "Create a quiz";
 
-            return View("~/Views/Student/StudentBeforeCourses.cshtml");
+            return View();
         }
 
         public ActionResult Quiz()
         {
             ViewBag.Message = "Take a quiz";
 
-            return View("~/Views/Student/StudentBeforeCourses.cshtml");
+            return View();
         }
     }
 }
