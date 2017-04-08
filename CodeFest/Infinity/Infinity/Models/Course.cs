@@ -26,5 +26,6 @@ namespace Infinity.Models
             CourseName = name;
             CourseDescription = description;
         }
+
     }
 }
