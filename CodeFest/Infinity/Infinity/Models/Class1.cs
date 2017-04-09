@@ -10,7 +10,8 @@ namespace Infinity.Models
     {
         public SQLiteDataReader makeQuery(string command)
         {
-            SQLiteConnection conn = new SQLiteConnection("Data Source=C:/Users/nacht_000/Documents/GitHub/supah_hot_fire/CodeFest/Infinity/Infinity/Database.db;");
+            string connectionString = string.Concat("Data Source=", System.AppDomain.CurrentDomain.BaseDirectory, "Database.db;Version=3;");
+            SQLiteConnection conn = new SQLiteConnection(connectionString);
             conn.Open();
             SQLiteCommand comm = new SQLiteCommand(command, conn);
             SQLiteDataReader reader = comm.ExecuteReader();
