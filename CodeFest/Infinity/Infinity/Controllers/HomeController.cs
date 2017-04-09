@@ -29,7 +29,9 @@ namespace Infinity.Controllers
         public ActionResult Course()
         {
 
-            ViewBag.Message = "Applying For College";
+            ViewBag.Header = "Applying For College";
+            ViewBag.Video = "https://www.youtube.com/embed/jPrEKz1rAno";
+            ViewBag.Transcripts = "";
 
             return View();
         }
