@@ -18,7 +18,7 @@ namespace Infinity
 
 
             //SQLiteConnection.CreateFile("Database.");
-            SQLiteConnection _SQL = new SQLiteConnection("Data Source=Database.db;Version=3;");
+            SQLiteConnection _SQL = new SQLiteConnection("Data Source=D:\\Dev\\Code\\MyProjects\\C#\\supah_hot_fire\\CodeFest\\Infinity\\Infinity\\Database.db;Version=3;");
 
             _SQL.Open();
 
