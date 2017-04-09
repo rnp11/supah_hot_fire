@@ -34,17 +34,18 @@
  .bar {
    display: block;
    height: 5px;
-   width: 50px;
+   width: 30px;
    background: #fff;
    margin: 10px auto;
  }
  
  .btn-nav {
    display: block;
-   padding: 15px 0;
+   padding: 10px 0;
    width: 50px;
    position: fixed;
    left: 20px;
+   margin-right:50px;
    margin: 0 auto;
    -webkit-transition: all 1s ease;
    -moz-transition: all 1s ease;
@@ -103,7 +104,7 @@
    position: absolute;
    left: -50%;
    top: 0;
-   background: #CD5334;
+   background: #3f454a;
    height: 100%;
    width: 150px;
  }
@@ -160,7 +161,7 @@
  }
  
  .list-item a {
-   color: #fff;
+   color: #CD5334;
    font-size: 1.7em;
    display: block;
    width: 100%;
@@ -273,7 +274,7 @@
 }
 
 .ua:hover .fa {
-   color: #17BEBB;
+   color: #CD5334;
    -webkit-transform: scale(1.5);
    -moz-transform: scale(1.5);
    -ms-transform: scale(1.5);

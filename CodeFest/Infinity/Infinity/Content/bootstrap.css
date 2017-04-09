@@ -18,7 +18,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  margin: 0;
+  padding-left: 50px;
 }
 article,
 aside,
@@ -93,8 +93,8 @@ sub {
 }
 img {
   border: 0;
-  height: 100%;
-  width: 100%;
+  height: 50%;
+  width: 50%;
 }
 svg:not(:root) {
   overflow: hidden;
@@ -1130,7 +1130,7 @@ img {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   display: block;
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   padding-top: 20px;
 }
@@ -1147,7 +1147,7 @@ img {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: inline-block;
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
 .img-circle {
@@ -3475,6 +3475,7 @@ input[type="button"].btn-block {
   width: 100%;
 
 }
+
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
@@ -4966,7 +4967,7 @@ a.badge:focus {
   margin-left: 3px;
 }
 .jumbotron {
-  padding-top: 30px;
+  padding-top: 5px;
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
@@ -4995,7 +4996,7 @@ a.badge:focus {
 }
 @media screen and (min-width: 768px) {
   .jumbotron {
-    padding-top: 48px;
+    padding-top: 5px;
     padding-bottom: 48px;
   }
   .container .jumbotron,
@@ -6938,13 +6939,13 @@ label,
   border-color: transparent;
 }
 .nav-tabs > li > a {
-  color: #ebebeb;
+  color: #CD5334;
 }
 .nav-pills > li > a {
-  color: #ebebeb;
+  color: #CD5334;
 }
 .pager a {
-  color: #ebebeb;
+  color: #CD5334;
 }
 .alert {
   color: #fff;
