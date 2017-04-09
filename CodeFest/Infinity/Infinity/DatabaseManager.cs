@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Data.SQLite;
+using System.Web.Services;
 
 namespace Infinity
 {
     public class DatabaseManager
     {
-        public Object makeScalarQuery(string command)
+        [WebMethod]
+        public static Object makeScalarQuery(string command)
         {
             string connectionString = string.Concat("Data Source=", System.AppDomain.CurrentDomain.BaseDirectory, "Database.db;Version=3;");
             SQLiteConnection conn = new SQLiteConnection(connectionString);
@@ -19,7 +21,7 @@ namespace Infinity
             conn.Close();
             return something;
         }
-        public void makeNonQuery(string command)
+        public static void makeNonQuery(string command)
         {
             string connectionString = string.Concat("Data Source=", System.AppDomain.CurrentDomain.BaseDirectory, "Database.db;Version=3;");
             SQLiteConnection conn = new SQLiteConnection(connectionString);
@@ -28,7 +30,7 @@ namespace Infinity
             comm.ExecuteNonQuery();
             conn.Close();
         }
-        public SQLiteDataReader makeReaderQuery(string command)
+        public static SQLiteDataReader makeReaderQuery(string command)
         {
             string connectionString = string.Concat("Data Source=", System.AppDomain.CurrentDomain.BaseDirectory, "Database.db;Version=3;");
             SQLiteConnection conn = new SQLiteConnection(connectionString);
