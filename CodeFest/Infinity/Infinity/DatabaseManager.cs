@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Data.SQLite;
 
-namespace Infinity.Models
+namespace Infinity
 {
     public class DatabaseManager
     {
