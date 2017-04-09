@@ -15,16 +15,7 @@ namespace Infinity
         // For more information on configuring authentication, please visit http://go.microsoft.com/fwlink/?LinkId=301864
         public void ConfigureAuth(IAppBuilder app)
         {
-
-            string connectionString = string.Concat("Data Source=", System.AppDomain.CurrentDomain.BaseDirectory, "Database.db;Version=3;");
-
-            //SQLiteConnection.CreateFile("Database.");
-            SQLiteConnection _SQL = new SQLiteConnection(connectionString);
-
-            _SQL.Open();
-
-            SQLiteCommand cmd = new SQLiteCommand();
-
+            //string connectionString = string.Concat("Data Source=", System.AppDomain.CurrentDomain.BaseDirectory, "Database.db;Version=3;");
 
             // Configure the db context, user manager and signin manager to use a single instance per request
             app.CreatePerOwinContext(ApplicationDbContext.Create);
