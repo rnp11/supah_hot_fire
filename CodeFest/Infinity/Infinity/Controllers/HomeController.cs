@@ -22,7 +22,7 @@ namespace Infinity.Controllers
             string result = DatabaseManager.makeScalarQuery(command).ToString();
             if(result.Equals("S", StringComparison.InvariantCultureIgnoreCase))
             {
-                return RedirectToAction("Index","Student");
+                return RedirectToAction("StudentsCourses","Student");
             }
             else if(result.Equals("M", StringComparison.InvariantCultureIgnoreCase))
             {
