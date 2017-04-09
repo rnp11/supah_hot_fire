@@ -35,8 +35,7 @@
     function calldb() {
         var uname = document.getElementById("username").value;
         var psw = document.getElementById("password").value;
-        window.alert((String)(psw));
-        var type = PageMethods.makeScalarQuery("SELECT UserType FROM Users WHERE UserName = {0} AND Password = {1}".format(uname, psw));
+        var type = makeScalarQuery("SELECT UserType FROM User WHERE UserName = {0} AND Password = {1}".format(uname, psw));
         if (type == "S") {
             document.location.href = "~/Student/Index";
         }
