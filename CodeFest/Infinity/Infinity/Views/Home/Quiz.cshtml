@@ -4,6 +4,64 @@
 }
 
 <h2>Quiz</h2><br />
+
+@using (Html.BeginForm("Quiz", "Home", FormMethod.Post))
+{
+    <div>@ViewBag.Message</div><br/>
+    <b>-Question 1-</b><br />
+    <b>How many colleges in the United States accept more than 75% of applicants?</b><br />
+    <label>@Html.RadioButton("q1", "Fewer than 200") Fewer than 200 </label><br />
+    <label>@Html.RadioButton("q1", "334") 334 </label><br />
+    <label>@Html.RadioButton("q1", "Close to 500") Close to 500 </label><br />
+    <label>@Html.RadioButton("q1", "More than 600") More than 600 </label><br />
+
+    <br/>
+
+    <b>-Question 2-</b><br />
+    <b>What is the most common college major?</b><br />
+    <label>@Html.RadioButton("q2", "Business Administration and Management") Business Administration and Management </label><br />
+    <label>@Html.RadioButton("q2", "Nursing") Nursing </label><br />
+    <label>@Html.RadioButton("q2", "Accounting") Accounting </label><br />
+    <label>@Html.RadioButton("q2", "Computer Science") Computer Science </label><br />
+
+    <br/>
+
+    <b>-Question 3-</b><br />
+    <b>What percentage of undergraduates work 20 or more hours a week?</b><br />
+    <label>@Html.RadioButton("q3", "10%") 10% </label><br />
+    <label>@Html.RadioButton("q3", "23%") 23% </label><br />
+    <label>@Html.RadioButton("q3", "36%") 36% </label><br />
+    <label>@Html.RadioButton("q3", "50%") 50% </label><br />
+
+    <br/>
+
+    <b>-Question 4-</b><br />
+    <b>How much debt does the average college graduate accumulate?</b><br />
+    <label>@Html.RadioButton("q4", "$17,000") $17,000 </label><br />
+    <label>@Html.RadioButton("q4", "$25,000") $25,000 </label><br />
+    <label>@Html.RadioButton("q4", "$37,000") $37,000 </label><br />
+    <label>@Html.RadioButton("q4", "$50,000") $50,000 </label><br />
+
+    <br />
+
+    <b>-Question 5-</b><br />
+    <b>775,000 male students enroll in college each year.How many female students enroll?</b><br />
+    <label>@Html.RadioButton("q5", "500,000") 500,000 </label><br />
+    <label>@Html.RadioButton("q5", "750,000") 750,000 </label><br />
+    <label>@Html.RadioButton("q5", "1,250,000") 1,250,000 </label><br />
+    <label>@Html.RadioButton("q5", "1,575,000") 1,575,000 </label><br />
+
+    <br />
+
+    <input type="submit" value="Check Answers" /><br/>
+    <div>
+        <span style="font-size: 20px">
+            @Html.ActionLink("Return Home", "StudentsCourses", "Student")
+        </span>
+    </div>
+}
+    <!--
+
 <form>
     <b>-Question 1-</b><br />
     <b>How many colleges in the United States accept more than 75% of applicants?</b>
@@ -20,14 +78,8 @@
         <label><input type="radio" name="q1" value="More than 600">More than 600</label>
     </div><br />
 </form>
-@using (Html.BeginForm("Quiz", "Home", FormMethod.Post))
-{
-   <label>@Html.RadioButton("Gender", "male") Male </label> 
-   <label>@Html.RadioButton("Gender", "female") Female </label >
 
-   <input type="submit" value="Save" />
-}
-<div>@ViewBag.Message</div>
+
 <form>
     <b>-Question 2-</b><br />
     <b>What is the most common college major?</b>
@@ -100,7 +152,6 @@
     <input type="submit" value="Submit">
 </form>
 
-    <!--
     @for (var i = 0; i < 5; i++)
     {
     <b>-Question @(i+1)-</b><br/>
