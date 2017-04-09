@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Infinity.Models.Users
+namespace Infinity.Models
 {
-    public class Student
+    public class UserModel
     {
         public string Name { get; set; }
         // available classes are based on the schoolID
@@ -20,7 +20,7 @@ namespace Infinity.Models.Users
         public int Lesson { get; set; }
         private int CourseId { get; set; }
 
-        public Student(string Name, string Organization, int points,
+        public UserModel(string Name, string Organization, int points,
             string Password, string username, int userId, string userType,
             string picture, int lesson, int CourseId)
         {

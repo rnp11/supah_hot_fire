@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Infinity.Models
 {
-    public class Course
+    public class CourseModels
     {
         public int CourseIdNum { get; set; }
         public string CourseName { get; set; }
@@ -13,14 +13,14 @@ namespace Infinity.Models
         // public Mentor CourseMentor { get; set; }
         // public Quiz CourseQuiz { get; set; }
 
-        public Course()
+        public CourseModels()
         {
             CourseIdNum = 0;
             CourseName = "";
             CourseDescription = "";
         }
 
-        public Course(int courseId, string name, string description)
+        public CourseModels(int courseId, string name, string description)
         {
             CourseIdNum = courseId;
             CourseName = name;
