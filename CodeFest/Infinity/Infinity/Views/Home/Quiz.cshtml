@@ -20,7 +20,14 @@
         <label><input type="radio" name="q1" value="More than 600">More than 600</label>
     </div><br />
 </form>
+@using (Html.BeginForm("Quiz", "Home", FormMethod.Post))
+{
+   <label>@Html.RadioButton("Gender", "male") Male </label> 
+   <label>@Html.RadioButton("Gender", "female") Female </label >
 
+   <input type="submit" value="Save" />
+}
+<div>@ViewBag.Message</div>
 <form>
     <b>-Question 2-</b><br />
     <b>What is the most common college major?</b>

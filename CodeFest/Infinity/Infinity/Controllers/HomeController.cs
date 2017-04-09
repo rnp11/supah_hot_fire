@@ -52,9 +52,11 @@ namespace Infinity.Controllers
 
         public ActionResult Quiz()
         {
-            ViewBag.Message = "Take a quiz";
+            var YourRadioButton = Request.Form["Gender"];
+            ViewBag.Message = YourRadioButton;
 
             return View();
         }
+        
     }
 }

@@ -17,21 +17,19 @@ namespace Infinity
         public int UserID { get; set; }
         public string UserType { get; set; }
         public string Picture { get; set; }
-        public Lesson Lesson { get; set; }
+        //public Lesson Lesson { get; set; }
         private int CourseId { get; set; }
 
         public User(string Name, string Organization, int points,
-            string picture, Lesson lesson, int CourseId)
+            string picture, int CourseId)
         {
             this.Name = Name;
             this.Organization = Organization;
             this.Infinipoints = points;
             this.Password = Password;
             this.Username = Username;
-            this.UserID = userId;
             this.UserType = UserType;
             this.Picture = picture;
-            this.Lesson = lesson;
             this.CourseId = CourseId;
 
         }
