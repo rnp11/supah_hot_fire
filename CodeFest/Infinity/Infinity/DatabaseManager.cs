@@ -18,6 +18,7 @@ namespace Infinity
             
             Object something = comm.ExecuteScalar();
             conn.Close();
+            
             return something;
         }
         public static void makeNonQuery(string command)

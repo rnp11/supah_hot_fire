@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Infinity.Models;
 
 namespace Infinity.Controllers
 {
@@ -10,7 +11,27 @@ namespace Infinity.Controllers
     {
         public ActionResult Index()
         {
+            
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult Index(LoginViewModel lvm)
+        {
+            var command = String.Format("SELECT UserType FROM User WHERE UserName = \"{0}\" AND Password = \"{1}\"", lvm.Email, lvm.Password);
+            string result = DatabaseManager.makeScalarQuery(command).ToString();
+            if(result.Equals("S", StringComparison.InvariantCultureIgnoreCase))
+            {
+                return RedirectToAction("Index","Student");
+            }
+            else if(result.Equals("M", StringComparison.InvariantCultureIgnoreCase))
+            {
+                return RedirectToAction("Index", "Mentor");
+            }
+            else
+            {
+                return null;
+            }
         }
 
         public ActionResult About()

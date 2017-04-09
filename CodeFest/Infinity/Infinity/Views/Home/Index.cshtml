@@ -14,33 +14,19 @@
           class="close" title="Close Modal">&times;</span>
 
     <!-- Modal Content -->
-    <form class="modal-content animate" action="/action_page.php">
+    <form class="modal-content animate" action="" method="post">
         <div class="container" text-align=center >
             <label><b>Username</b></label>
-
-            <input type="text" placeholder="Enter Username" name="uname" required id="username"><br/>
+            
+            <input type="text" placeholder="Enter Username" name="email" required id="username"><br/>
             
             <label><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required id="password"><br/>
+            <input type="password" placeholder="Enter Password" name="password" required id="password"><br/>
             
-            <button type="button" onclick=calldb()> Log in</button>
+            <button type="submit"> Log in</button>
             <input type="checkbox" checked="checked"> Remember me
         </div>
     </form>
 </div>
 <button type="button" class="btn btn-primary btn-lg" style="display: inline; margin: 0 auto;" onclick="document.getElementById('id01').style.display='block'">Log in</button>
 <button type="button" class="btn btn-primary btn-lg"style="display: inline; margin: 0 auto;" padding="10px">Register</button>
-
-<script>
-    function calldb() {
-        var uname = document.getElementById("username").value;
-        var psw = document.getElementById("password").value;
-        var type = makeScalarQuery("SELECT UserType FROM User WHERE UserName = {0} AND Password = {1}".format(uname, psw));
-        if (type == "S") {
-            document.location.href = "~/Student/Index";
-        }
-        else {
-            document.location.href = "~/Mentor/Index";
-        }
-    }
-</script>
