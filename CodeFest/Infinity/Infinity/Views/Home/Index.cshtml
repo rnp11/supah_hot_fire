@@ -2,7 +2,7 @@
     ViewBag.Title = "Home Page";
 }
 
-<script src="~/Scripts/dbquery.js"></script>
+
 <div class="jumbotron" align="center">
     <img src="../Resources/Infinteen_logo.png" alt="Logo" width="250px" height="130px">
     <p align="center">Infiniteen is dedicated to providing online classes for high school classes, made by professional mentors.</p>
@@ -17,21 +17,29 @@
     <form class="modal-content animate" action="/action_page.php">
         <div class="container" text-align=center >
             <label><b>Username</b></label>
+
             <input type="text" placeholder="Enter Username" name="uname" required><br/>
 
             <label><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required><br/>
             
-            <button type="button" onclick=javascript:queryRequest()> Log in</button>
+            <button type="button" onclick=calldb()> Log in</button>
             <input type="checkbox" checked="checked"> Remember me
         </div>
     </form>
 </div>
-
 <button type="button" class="btn btn-primary btn-lg" style="display: inline; margin: 0 auto;" onclick="document.getElementById('id01').style.display='block'">Log in</button>
 <button type="button" class="btn btn-primary btn-lg"style="display: inline; margin: 0 auto;" padding="10px">Register</button>
-
 <script>
-    function calldb(){
+    function calldb() {
+        var uname = document.getElementById("uname").value;
+        var psw = document.getElementById("psw").value;
+        var type = PageMethods.makeScalarQuery("SELECT UserType FROM Users WHERE UserName = {0} AND Password = {1}".format(uname, psw));
+        if (type == "0") {
+            document.location.href = "~/Student/Index";
+        }
+        else {
+            document.location.href = "~/Mentor/Index";
+        }
     }
 </script>
