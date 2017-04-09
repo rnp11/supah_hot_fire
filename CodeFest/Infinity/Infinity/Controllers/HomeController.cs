@@ -28,7 +28,8 @@ namespace Infinity.Controllers
         }
         public ActionResult Course()
         {
-            ViewBag.Message = "Take the course";
+
+            ViewBag.Message = "Applying For College";
 
             return View();
         }
