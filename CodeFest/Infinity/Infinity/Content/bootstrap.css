@@ -19,6 +19,7 @@ html {
 }
 body {
     padding-left: 50px;
+    z-index:-10;
 }
 article,
 aside,
@@ -1106,12 +1107,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #df691a;
+  color: #ffffff;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #df691a;
+  color: #fffff;
   text-decoration: underline;
 }
 a:focus {
@@ -1594,7 +1595,7 @@ pre code {
 }
 .container {
   margin-right: auto;
-  margin-left: auto;
+  margin-left: 50px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -3984,9 +3985,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-left: -1px;
 }
 .nav {
-  margin-bottom: 0;
-  padding-left: 0;
+  position: relative;
   list-style: none;
+  height:100%;
 }
 .nav > li {
   position: relative;
