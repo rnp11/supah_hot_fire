@@ -9,7 +9,6 @@ namespace Infinity
 {
     public class DatabaseManager
     {
-        [WebMethod]
         public static Object makeScalarQuery(string command)
         {
             string connectionString = string.Concat("Data Source=", System.AppDomain.CurrentDomain.BaseDirectory, "Database.db;Version=3;");
