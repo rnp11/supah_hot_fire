@@ -26,25 +26,32 @@ namespace Infinity.Controllers
 
             return View();
         }
-        public ActionResult Login()
+        public ActionResult Course()
         {
-            ViewBag.Message = "Your Login page";
+            ViewBag.Message = "Take the course";
 
             return View();
         }
 
-        public ActionResult StudentsCourses()
+        public ActionResult CreateCourse()
         {
-            ViewBag.Message = "Classes Available to Students";
+            ViewBag.Message = "Create a course";
 
-            return View("~/Views/Student/StudentsCourses.cshtml");
+            return View();
         }
 
-        public ActionResult StudentBeforePoints()
+        public ActionResult CreateQuiz()
         {
-            ViewBag.Message = "Classes Available to Students";
+            ViewBag.Message = "Create a quiz";
 
-            return View("~/Views/Student/StudentBeforeCourses.cshtml");
+            return View();
+        }
+
+        public ActionResult Quiz()
+        {
+            ViewBag.Message = "Take a quiz";
+
+            return View();
         }
     }
 }
