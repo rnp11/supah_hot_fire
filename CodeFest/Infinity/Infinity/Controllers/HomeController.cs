@@ -50,7 +50,9 @@ namespace Infinity.Controllers
         public ActionResult Course()
         {
 
-            ViewBag.Message = "Applying For College";
+            ViewBag.Header = "Applying For College";
+            ViewBag.Video = "https://www.youtube.com/embed/jPrEKz1rAno";
+            ViewBag.Transcripts = "";
 
             return View();
         }
@@ -71,9 +73,11 @@ namespace Infinity.Controllers
 
         public ActionResult Quiz()
         {
-            ViewBag.Message = "Take a quiz";
+            var YourRadioButton = Request.Form["Gender"];
+            ViewBag.Message = YourRadioButton;
 
             return View();
         }
+        
     }
 }

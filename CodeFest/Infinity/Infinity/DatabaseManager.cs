@@ -15,10 +15,10 @@ namespace Infinity
             SQLiteConnection conn = new SQLiteConnection(connectionString);
             conn.Open();
             SQLiteCommand comm = new SQLiteCommand(command, conn);
-            
+
             Object something = comm.ExecuteScalar();
             conn.Close();
-            
+
             return something;
         }
         public static void makeNonQuery(string command)

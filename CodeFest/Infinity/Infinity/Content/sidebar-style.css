@@ -1,12 +1,5 @@
-﻿html,
- body {
-   height: 100%;
-   width: 100%;
-   margin: 0;
-   background: #2E282A;
- }
- 
- button {
+﻿
+button {
    background: none;
    border: none;
  }
@@ -24,11 +17,15 @@
  }
  
  .btn-nav:hover {
-   cursor: pointer;
+   cursor: pointer;  
  }
  
  .btn-nav:hover .bar {
-   background: #678db4;
+   background: #678eb3;
+ }
+
+ .btn-nav.animated:hover .bar {
+     background: #fff;
  }
  
  .bar {
@@ -37,6 +34,7 @@
    width: 50px;
    background: #fff;
    margin: 10px auto;
+
  }
  
  .btn-nav {
@@ -72,7 +70,10 @@
  .animated {
    z-index: 999;
  }
- 
+
+ button.btn-nav.animated .bar {
+    background-color: white;
+}
  .animated .arrow-top-r {
    -webkit-transform: rotateZ(-45deg) translateY(11px);
    -moz-transform: rotateZ(-45deg) translateY(11px);
@@ -106,6 +107,7 @@
    background: #678eb3;
    height: 100%;
    width: 150px;
+   
  }
  
  .nav-list {
