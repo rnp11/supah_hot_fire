@@ -19,7 +19,7 @@
             <label><b>Username</b></label>
 
             <input type="text" placeholder="Enter Username" name="uname" required><br/>
-
+            
             <label><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required><br/>
             
@@ -30,12 +30,13 @@
 </div>
 <button type="button" class="btn btn-primary btn-lg" style="display: inline; margin: 0 auto;" onclick="document.getElementById('id01').style.display='block'">Log in</button>
 <button type="button" class="btn btn-primary btn-lg"style="display: inline; margin: 0 auto;" padding="10px">Register</button>
+
 <script>
     function calldb() {
-        var uname = document.getElementById("uname").value;
-        var psw = document.getElementById("psw").value;
+        var uname = document.getElementsByName("uname")[0].valueOf();
+        var psw = document.getElementsByName("psw")[0].valueOf();
         var type = PageMethods.makeScalarQuery("SELECT UserType FROM Users WHERE UserName = {0} AND Password = {1}".format(uname, psw));
-        if (type == "0") {
+        if (type == "S") {
             document.location.href = "~/Student/Index";
         }
         else {
