@@ -22,5 +22,8 @@ select,
 textarea {
     max-width: 280px;
 }
+sidebar{
+    border-left: 50px solid #678eb3;
+}
 
 
