@@ -258,12 +258,8 @@
     <Content Include="Views\Student\StudentsCourses.cshtml" />
     <Content Include="Views\Student\Index.cshtml" />
     <Content Include="Views\Mentor\Index.cshtml" />
-    <Content Include="Views\Mentor\MentorWithNoCourse.cshtml" />
     <Content Include="Views\Home\CreateCourse.cshtml" />
     <Content Include="Views\Home\CreateQuiz.cshtml" />
-    <Content Include="Views\Mentor\MentorWithCourse.cshtml" />
-    <Content Include="Views\Student\StudentBeforePoints.cshtml" />
-    <Content Include="Views\Student\StudentAfterPoints.cshtml" />
     <Content Include="Views\Home\Course.cshtml" />
     <Content Include="Views\Home\Quiz.cshtml" />
     <Content Include="Views\Account\StudentProfile.cshtml" />
