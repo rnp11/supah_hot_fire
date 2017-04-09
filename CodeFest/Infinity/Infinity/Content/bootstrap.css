@@ -18,7 +18,11 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  padding-left: 50px;
+    padding-left: 50px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
 }
 article,
 aside,
@@ -93,8 +97,8 @@ sub {
 }
 img {
   border: 0;
-  height: 50%;
-  width: 50%;
+  height: 100%;
+  width: 100%;
 }
 svg:not(:root) {
   overflow: hidden;
@@ -1419,7 +1423,7 @@ a.bg-danger:focus {
 }
 .page-header {
   padding-bottom: 9.5px;
-  margin: 42px 0 21px;
+  margin: 50px 0 21px;
   border-bottom: 1px solid #ebebeb;
 }
 ul,
