@@ -7,24 +7,19 @@ namespace Infinity.Models
 {
     public class CourseModels
     {
-        public int CourseIdNum { get; set; }
+        public int CourseId { get; set; }
         public string CourseName { get; set; }
-        public string CourseDescription { get; set; }
+        public string URL { get; set; }
+        public int QuizId { get; set; }
+        public string Teacher { get;  set; }
         // public Mentor CourseMentor { get; set; }
         // public Quiz CourseQuiz { get; set; }
 
-        public CourseModels()
+        public CourseModels(int courseId, string courseName, string description)
         {
-            CourseIdNum = 0;
-            CourseName = "";
-            CourseDescription = "";
-        }
-
-        public CourseModels(int courseId, string name, string description)
-        {
-            CourseIdNum = courseId;
-            CourseName = name;
-            CourseDescription = description;
+            //CourseIdNum = courseId;
+            //CourseName = name;
+            //CourseDescription = description;
         }
 
     }
