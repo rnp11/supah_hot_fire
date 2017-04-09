@@ -2,7 +2,7 @@
     ViewBag.Title = "Home Page";
 }
 
-
+<script src="~/Scripts/dbquery.js"></script>
 <div class="jumbotron" align="center">
     <img src="../Resources/Infinteen_logo.png" alt="Logo" width="250px" height="130px">
     <p align="center">Infiniteen is dedicated to providing online classes for high school classes, made by professional mentors.</p>
@@ -21,8 +21,8 @@
 
             <label><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required><br/>
-
-            <button type="submit" >Log in</button>
+            
+            <button type="button" onclick=javascript:queryRequest()> Log in</button>
             <input type="checkbox" checked="checked"> Remember me
         </div>
     </form>
@@ -30,3 +30,8 @@
 
 <button type="button" class="btn btn-primary btn-lg" style="display: inline; margin: 0 auto;" onclick="document.getElementById('id01').style.display='block'">Log in</button>
 <button type="button" class="btn btn-primary btn-lg"style="display: inline; margin: 0 auto;" padding="10px">Register</button>
+
+<script>
+    function calldb(){
+    }
+</script>
