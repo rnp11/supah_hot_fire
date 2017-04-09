@@ -6,7 +6,6 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using Infinity.Models;
-using System.Data.SQLite;
 
 namespace Infinity
 {
@@ -15,16 +14,6 @@ namespace Infinity
         // For more information on configuring authentication, please visit http://go.microsoft.com/fwlink/?LinkId=301864
         public void ConfigureAuth(IAppBuilder app)
         {
-
-
-            //SQLiteConnection.CreateFile("Database.");
-            SQLiteConnection _SQL = new SQLiteConnection("Data Source=Database.db;Version=3;");
-
-            _SQL.Open();
-
-            SQLiteCommand cmd = new SQLiteCommand();
-
-
             // Configure the db context, user manager and signin manager to use a single instance per request
             app.CreatePerOwinContext(ApplicationDbContext.Create);
             app.CreatePerOwinContext<ApplicationUserManager>(ApplicationUserManager.Create);
@@ -45,7 +34,7 @@ namespace Infinity
                         validateInterval: TimeSpan.FromMinutes(30),
                         regenerateIdentity: (manager, user) => user.GenerateUserIdentityAsync(manager))
                 }
-            });            
+            });
             app.UseExternalSignInCookie(DefaultAuthenticationTypes.ExternalCookie);
 
             // Enables the application to temporarily store user information when they are verifying the second factor in the two-factor authentication process.
