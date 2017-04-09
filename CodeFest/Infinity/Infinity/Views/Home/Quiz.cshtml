@@ -3,52 +3,142 @@
     ViewBag.Title = "Quiz";
 }
 
-<h2>Quiz</h2>
+<h2>Quiz</h2><br />
+<form>
+    <b>-Question 1-</b><br />
+    <b>How many colleges in the United States accept more than 75% of applicants?</b>
+    <div class="radio">
+        <label><input type="radio" name="q1" value="Fewer than 200">Fewer than 200</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="q1" value="334">334</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="q1" value="Close to 500">Close to 500</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="q1" value="More than 600">More than 600</label>
+    </div><br />
+</form>
 
-@for (var i = 0; i < 5; i++)
-{
-<b>-Question @(i+1)-</b><br/>
-<b>How many colleges in the United States accept more than 75% of applicants?</b>
-<div class="radio">
-    <label><input type="radio" name="optradio">Fewer than 200</label>
-</div>
-<div class="radio">
-    <label><input type="radio" name="optradio">334</label>
-</div>
-<div class="radio">
-    <label><input type="radio" name="optradio">Close to 500</label>
-</div>
-<div class="radio">
-    <label><input type="radio" name="optradio">More than 600</label>
-</div><br/>
-}
+<form>
+    <b>-Question 2-</b><br />
+    <b>What is the most common college major?</b>
+    <div class="radio">
+        <label><input type="radio" name="q2" value="Business Administration and Management">Business Administration and Management</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="q2" value="Nursing">Nursing</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="q2" value="Accounting">Accounting</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="q2" value="Computer Science">Computer Science</label>
+    </div><br />
+</form>
 
-How many colleges in the United States accept more than 75% of applicants?
-a. Fewer than 200
-b. 334
-c. Close to 500***
-d. More than 600
+<form>
+    <b>-Question 3-</b><br />
+    <b>What percentage of undergraduates work 20 or more hours a week?</b>
+    <div class="radio">
+        <label><input type="radio" name="q3" value="10%">10%</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="q3" value="23%">23%</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="q3" value="36%">36%</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="q3" value="48%">48%</label>
+    </div><br />
+</form>
 
-What is the most common college major?
-a. Business Administration and Management***
-b. Nursing
-c. Accounting
-d. Teacher Education and Professional Development
+<form>
+    <b>-Question 4-</b><br />
+    <b>How much debt does the average college graduate accumulate?</b>
+    <div class="radio">
+        <label><input type="radio" name="q4" value="$17,500">$17,500</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="q4" value="$25,000">$25,000</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="q4" value="$37,000">$37,000</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="q4" value="$50,000">$50,000</label>
+    </div><br />
+</form>
 
-What percentage of undergraduates work 20 or more hours a week?
-a. 10%
-b. 23%***
-c. 36%
-d. 48%
+<form>
+    <b>-Question 5-</b><br />
+    <b>775,000 male students enroll in college each year. How many female students enroll?</b>
+    <div class="radio">
+        <label><input type="radio" name="q5" value="500,000">500,000</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="q5" value="750,000">750,000</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="q5" value="1,250,000">1,250,000</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="q5" value="1,575,000">1,575,000</label>
+    </div><br />
+</form>
 
-How much debt does the average college graduate accumulate?
-a. 17,500
-b. 25,000
-c. 37,000***
-d. 50,000
+<form name="myform" action="Index">
+    <input type="submit" value="Submit">
+</form>
 
-775,000 male students enroll in college each year. How many female students enroll?
-a. 500,000
-b. 750,000
-c. 1,250,000
-d. 1,575,000***
+    <!--
+    @for (var i = 0; i < 5; i++)
+    {
+    <b>-Question @(i+1)-</b><br/>
+    <b>How many colleges in the United States accept more than 75% of applicants?</b>
+    <div class="radio">
+        <label><input type="radio" name="optradio">Fewer than 200</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="optradio">334</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="optradio">Close to 500</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="optradio">More than 600</label>
+    </div><br/>
+    }
+
+    How many colleges in the United States accept more than 75% of applicants?
+    a. Fewer than 200
+    b. 334
+    c. Close to 500***
+    d. More than 600
+
+    What is the most common college major?
+    a. Business Administration and Management***
+    b. Nursing
+    c. Accounting
+    d. Computer Science
+
+    What percentage of undergraduates work 20 or more hours a week?
+    a. 10%
+    b. 23%***
+    c. 36%
+    d. 48%
+
+    How much debt does the average college graduate accumulate?
+    a. 17,500
+    b. 25,000
+    c. 37,000***
+    d. 50,000
+
+    775,000 male students enroll in college each year. How many female students enroll?
+    a. 500,000
+    b. 750,000
+    c. 1,250,000
+    d. 1,575,000***
+        -->
