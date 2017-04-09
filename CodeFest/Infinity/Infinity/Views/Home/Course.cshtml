@@ -3,11 +3,48 @@
     ViewBag.Title = "Course";
 }
 
-<h2>@ViewBag.Message</h2>
+<h2>Lesson</h2>
 
 <div align="center">
-    
+
     <iframe width="588" height="441"
-            src="https://www.youtube.com/embed/jPrEKz1rAno"></iframe>
-    <div><p></p></div>
+            src="@ViewBag.Video"></iframe>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Targeting Schools</h3>
+                <p>Spicy jalapeno bacon ipsum dolor amet beef ribs andouille leberkas, 
+                sausage chuck pork chop spare ribs short loin. Sirloin tenderloin flank
+                 venison tail. Filet mignon landjaeger drumstick, sausage ham corned beef
+                 spare ribs boudin t-bone turducken. Bresaola cupim short loin fatback
+                 t-bone landjaeger sausage salami ribeye. Sausage shank pancetta hamburger
+                 ham hock biltong. Pastrami chuck brisket, meatball spare ribs cow tail
+                 prosciutto chicken kielbasa fatback corned beef pork.</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Applying</h3>
+                <p>Drumstick ham hock ribeye sausage beef. Jerky turducken ribeye, doner
+                 beef ribs picanha sirloin shankle pastrami swine chicken spare ribs shank
+                 kielbasa. Burgdoggen short ribs hamburger, turducken strip steak shoulder
+                 filet mignon cupim shank biltong t-bone spare ribs ribeye. Beef chuck jowl
+                 jerky. Drumstick landjaeger kielbasa, flank ground round short loin turkey
+                 doner cupim pancetta pork belly t-bone fatback sirloin meatloaf. Prosciutto
+                 tail bacon tri-tip short loin..</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Deciding</h3>
+                <p>Ham hock cupim filet mignon pork belly, sausage alcatra sirloin 
+                frankfurter tongue pork loin swine short loin cow turducken pork chop. 
+                Picanha drumstick meatloaf kielbasa pig boudin bacon. Ribeye shankle boudin,
+                 burgdoggen pork belly beef ribs jerky ground round cow spare ribs brisket
+                 pancetta. Fatback venison porchetta chuck shank tri-tip. Tail corned beef
+                 boudin, brisket shankle pig burgdoggen cupim.</p>
+            </div>
+        </div>
+        <div>
+            <span style="font-size: 20px">
+                @Html.ActionLink("Ready For the Quiz?", "Quiz", "Home")
+                </span>
+        </div>
+    </div>
 </div>

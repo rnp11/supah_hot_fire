@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Infinity.Models.Users
+namespace Infinity
 {
-    public class Student
+    public class User
     {
         public string Name { get; set; }
         // available classes are based on the schoolID
@@ -17,30 +17,21 @@ namespace Infinity.Models.Users
         public int UserID { get; set; }
         public string UserType { get; set; }
         public string Picture { get; set; }
-        public int Lesson { get; set; }
+        //public Lesson Lesson { get; set; }
         private int CourseId { get; set; }
 
-        public Student(string Name, string Organization, int points,
-            string Password, string username, int userId, string userType,
-            string picture, int lesson, int CourseId)
+        public User(string Name, string Organization, int points,
+            string picture, int CourseId)
         {
             this.Name = Name;
             this.Organization = Organization;
             this.Infinipoints = points;
             this.Password = Password;
             this.Username = Username;
-            this.UserID = userId;
             this.UserType = UserType;
             this.Picture = picture;
-            this.Lesson = lesson;
             this.CourseId = CourseId;
 
-        }
-
-        public void listAvailableClasses()
-        {
-            // list classes available based on the schoolID of the student
-            // Course.listClasses(schoolId); or something
         }
     }
 }

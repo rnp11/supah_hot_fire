@@ -29,7 +29,7 @@ namespace Infinity.Models.Users
 
         public void createCourse()
         {
-            coursesTaught.Add(new Course());
+            //coursesTaught.Add(new CourseModels());
         }
 
         public void listCoursesTaught()

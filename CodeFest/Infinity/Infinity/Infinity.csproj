@@ -187,15 +187,22 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Lesson.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="DatabaseManager.cs" />
-    <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\CourseModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\LessonModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\QuizModel.cs" />
+    <Compile Include="Models\UserModel.cs" />
     <Compile Include="Models\Users\Mentor.cs" />
     <Compile Include="Models\Users\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Question.cs" />
+    <Compile Include="Quiz.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\animate-login.css" />
