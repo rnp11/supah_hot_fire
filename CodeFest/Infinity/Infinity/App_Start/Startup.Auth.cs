@@ -16,9 +16,10 @@ namespace Infinity
         public void ConfigureAuth(IAppBuilder app)
         {
 
+            string connectionString = string.Concat("Data Source=", System.AppDomain.CurrentDomain.BaseDirectory, "Database.db;Version=3;");
 
             //SQLiteConnection.CreateFile("Database.");
-            SQLiteConnection _SQL = new SQLiteConnection("Data Source=D:\\Dev\\Code\\MyProjects\\C#\\supah_hot_fire\\CodeFest\\Infinity\\Infinity\\Database.db;Version=3;");
+            SQLiteConnection _SQL = new SQLiteConnection(connectionString);
 
             _SQL.Open();
 

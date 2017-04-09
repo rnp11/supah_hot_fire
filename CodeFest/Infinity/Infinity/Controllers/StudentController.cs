@@ -15,7 +15,7 @@ namespace Infinity.Controllers
         }
         public ActionResult StudentsCourses()
         {
-            ViewBag.Message = "Classes Available to Students";
+            ViewBag.Message = System.IO.Directory.GetCurrentDirectory() + "\\Database.db; Version = 3; ";
 
             return View();
         }
